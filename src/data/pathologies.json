@@ -1,0 +1,41 @@
+[
+  {
+    "id": "atherosclerose-membres",
+    "nom": "Athérosclérose des membres inférieurs",
+    "description": "Maladie artérielle périphérique causée par l'accumulation de plaque dans les artères des jambes",
+    "categorie": "Artériel",
+    "epidemiologie": "Affecte 8-10% de la population générale, plus fréquent chez les hommes et augmente avec l'âge",
+    "physiopathologie": "Formation de plaque athérosclérotique causant une sténose progressive des artères périphériques",
+    "diagnostic": "Examen clinique, palpation des pouls, épreuve de marche, index de pression systolique (IPS), échographie doppler, angiographie",
+    "traitement": "Traitement médical: antiplaquettaires, statines, inhibiteurs de l'ECA. Interventionnel: angioplastie, endartériectomie, pontage",
+    "complications": "Claudication intermittente, ischémie critique, gangrène, amputation",
+    "pronostic": "Variable selon le stade. La modification des facteurs de risque est essentielle",
+    "references": ["ESC 2017", "ESVS Guidelines"]
+  },
+  {
+    "id": "insuffisance-veineuse",
+    "nom": "Insuffisance veineuse chronique",
+    "description": "Dysfonctionnement du système veineux causant une mauvaise circulation du sang des jambes vers le cœur",
+    "categorie": "Veineux",
+    "epidemiologie": "Affecte 10-15% de la population générale, plus fréquent chez les femmes",
+    "physiopathologie": "Incompétence des valves veineuses ou obstruction causant une hypertension veineuse chronique",
+    "diagnostic": "Examen clinique, échographie-doppler veineuse, pléthysmographie",
+    "traitement": "Compression élastique, surélévation, activité physique. Interventions: sclérothérapie, ablation thermique, chirurgie veineuse",
+    "complications": "Œdème, changements cutanés, ulcères veineux, thrombose veineuse",
+    "pronostic": "Généralement bon avec traitement approprié",
+    "references": ["ESVM Guidelines", "Phlebology Reviews"]
+  },
+  {
+    "id": "thrombose-veineuse",
+    "nom": "Thrombose veineuse profonde (TVP)",
+    "description": "Formation d'un caillot sanguin dans une veine profonde, généralement des membres inférieurs",
+    "categorie": "Thromboembolique",
+    "epidemiologie": "Incidence: 1-2 pour 1000 habitants par an",
+    "physiopathologie": "Triade de Virchow: stase veineuse, atteinte endothéliale, thrombophilie",
+    "diagnostic": "Échographie-doppler veineuse, D-dimères, tomodensitométrie",
+    "traitement": "Anticoagulation: HBPM, fondaparinux, anticoagulants oraux directs ou warfarine",
+    "complications": "Embolie pulmonaire, syndrome post-thrombotique, thrombose récurrente",
+    "pronostic": "Bon avec anticoagulation appropriée; risque de récurrence: 2-8% par an",
+    "references": ["ACCP Guidelines", "ESC 2019"]
+  }
+]
