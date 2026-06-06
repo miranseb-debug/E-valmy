@@ -1,0 +1,52 @@
+[
+  {
+    "id": "aspirine",
+    "nom": "Aspirine",
+    "type": "Antiplaquettaire",
+    "indication": "Prévention primaire et secondaire des événements thrombotiques",
+    "posologie": "75-500 mg/jour selon indication",
+    "effetsSecondaires": "Hémorragie, ulcère gastrique, intolérance gastrique",
+    "contre_indications": "Allergie à l'aspirine, ulcère gastrique actif, antécédent d'AVC hémorragique",
+    "pathologiesAssociees": ["atherosclerose-membres", "thrombose-veineuse"]
+  },
+  {
+    "id": "atorvastatine",
+    "nom": "Atorvastatine",
+    "type": "Statine",
+    "indication": "Réduction du cholestérol et prévention des événements cardiovasculaires",
+    "posologie": "10-80 mg/jour",
+    "effetsSecondaires": "Myalgies, rhabdomyolyse rare, hépatotoxicité",
+    "contre_indications": "Maladie hépatique active, grossesse",
+    "pathologiesAssociees": ["atherosclerose-membres"]
+  },
+  {
+    "id": "enoxaparine",
+    "nom": "Énoxaparine",
+    "type": "Anticoagulant (HBPM)",
+    "indication": "Traitement et prévention de la thrombose veineuse",
+    "posologie": "Variable selon indication: 1 mg/kg SC 2x/jour ou 1.5 mg/kg SC 1x/jour",
+    "effetsSecondaires": "Hémorragie, thrombopénie induite par l'héparine (TIH)",
+    "contre_indications": "Hémorragie active, thrombocytopénie sévère, antécédent de TIH",
+    "pathologiesAssociees": ["thrombose-veineuse", "insuffisance-veineuse"]
+  },
+  {
+    "id": "warfarine",
+    "nom": "Warfarine",
+    "type": "Anticoagulant oral",
+    "indication": "Anticoagulation à long terme pour thrombose veineuse et prévention d'embolie pulmonaire",
+    "posologie": "Ajustement individualisé selon INR (cible: 2-3)",
+    "effetsSecondaires": "Hémorragie, nécrose cutanée, syndrome de la veine blanche",
+    "contre_indications": "Contre-indication absolue: aucune; relatives: grossesse, alcoolisme",
+    "pathologiesAssociees": ["thrombose-veineuse"]
+  },
+  {
+    "id": "compression-elastique",
+    "nom": "Compression élastique",
+    "type": "Dispositif médical",
+    "indication": "Traitement de l'insuffisance veineuse et prévention de TVP",
+    "posologie": "Port quotidien: 15-30 mmHg (Classe II) ou 30-40 mmHg (Classe III)",
+    "effetsSecondaires": "Inconfort, irritation cutanée, dermatite de contact",
+    "contre_indications": "Artérite au stade critique, IPS < 0.5",
+    "pathologiesAssociees": ["insuffisance-veineuse"]
+  }
+]
