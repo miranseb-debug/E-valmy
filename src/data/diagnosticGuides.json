@@ -1,0 +1,41 @@
+[
+  {
+    "id": "diagnostic-arteriel",
+    "titre": "Algorithme diagnostic - Suspicion d'artériopathie",
+    "description": "Arbre décisionnel pour le diagnostic de l'artériopathie des membres inférieurs",
+    "arbreDecisionnel": {
+      "question": "Patient symptomatique (douleur à la marche, douleurs de repos)?",
+      "oui": {
+        "question": "Examen clinique: pouls présents?",
+        "oui": "Effectuer IPS (ABPI). Si IPS 0.7-0.9: probable claudication. Démarrer traitement médical.",
+        "non": {
+          "question": "Douleurs de repos ou lésions trophiques?",
+          "oui": "Ischémie critique probable. Échographie doppler en urgence + angiographie + prendre avis chirurgien vasculaire",
+          "non": "Faire échographie doppler pour évaluer la sténose"
+        }
+      },
+      "non": {
+        "question": "Facteurs de risque présents (âge > 60, tabac, diabète)?",
+        "oui": "Screening: IPS et épreuve de marche. Si normal, suivi annuel.",
+        "non": "Pas d'intervention spécifique; conseils de prévention primaire"
+      }
+    }
+  },
+  {
+    "id": "diagnostic-veineux",
+    "titre": "Algorithme diagnostic - Suspicion de TVP",
+    "description": "Arbre décisionnel pour le diagnostic de la thrombose veineuse profonde",
+    "arbreDecisionnel": {
+      "question": "Patient avec gonflement unilatéral ou douleur de la jambe?",
+      "oui": {
+        "question": "Appliquer score de Wells (probabilité clinique)",
+        "oui": {
+          "question": "Score de Wells ≥ 2 (probabilité intermédiaire-haute)?",
+          "oui": "Échographie-doppler veineuse en urgence. Si positif: anticoagulation. Si négatif: D-dimères.",
+          "non": "D-dimères à titre d'orientation. Si positif ou doutes: échographie doppler. Si négatif: TVP exclue."
+        }
+      },
+      "non": "Pas de TVP suspecte. Évaluer autre diagnostic"
+    }
+  }
+]
