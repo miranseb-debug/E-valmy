@@ -1,0 +1,80 @@
+[
+  {
+    "id": "score-abpi",
+    "nom": "Index de Pression Systolique (IPS / ABPI)",
+    "description": "Rapport entre la pression systolique à la cheville et la pression systolique au bras. Utile pour évaluer la sévérité de l'ischémie des membres inférieurs.",
+    "variables": [
+      {
+        "id": "ps-bras",
+        "label": "Pression systolique au bras (mmHg)",
+        "type": "number",
+        "unite": "mmHg"
+      },
+      {
+        "id": "ps-cheville",
+        "label": "Pression systolique à la cheville (mmHg)",
+        "type": "number",
+        "unite": "mmHg"
+      }
+    ],
+    "calcul": "IPS = Pression cheville / Pression bras",
+    "interpretation": "IPS > 0.9: Normal; 0.7-0.9: Claudication probable; 0.4-0.7: Ischémie modérée; < 0.4: Ischémie critique"
+  },
+  {
+    "id": "score-fontaine",
+    "nom": "Score de Fontaine",
+    "description": "Classification clinique de l'artériopathie des membres inférieurs en 4 stades",
+    "variables": [
+      {
+        "id": "stade-fontaine",
+        "label": "Stade clinique",
+        "type": "select",
+        "options": [
+          { "value": "I", "label": "Stade I: Asymptomatique" },
+          { "value": "IIa", "label": "Stade IIa: Claudication légère (> 200m)" },
+          { "value": "IIb", "label": "Stade IIb: Claudication sévère (< 200m)" },
+          { "value": "III", "label": "Stade III: Douleurs de repos" },
+          { "value": "IV", "label": "Stade IV: Lésions trophiques/gangrène" }
+        ]
+      }
+    ],
+    "calcul": "Classification clinique basée sur les symptômes",
+    "interpretation": "Stades I-II: conservateurs; Stades III-IV: interventionnels"
+  },
+  {
+    "id": "score-wells-tvp",
+    "nom": "Score de Wells pour TVP",
+    "description": "Évalue la probabilité clinique de thrombose veineuse profonde",
+    "variables": [
+      {
+        "id": "cancer",
+        "label": "Cancer en cours ou antécédent < 6 mois",
+        "type": "select",
+        "options": [
+          { "value": "0", "label": "Non (0 points)" },
+          { "value": "1", "label": "Oui (1 point)" }
+        ]
+      },
+      {
+        "id": "immobilisation",
+        "label": "Immobilisation > 3 jours ou chirurgie < 4 semaines",
+        "type": "select",
+        "options": [
+          { "value": "0", "label": "Non (0 points)" },
+          { "value": "1", "label": "Oui (1 point)" }
+        ]
+      },
+      {
+        "id": "douleur-mollet",
+        "label": "Douleur du mollet",
+        "type": "select",
+        "options": [
+          { "value": "0", "label": "Non (0 points)" },
+          { "value": "1", "label": "Oui (1 point)" }
+        ]
+      }
+    ],
+    "calcul": "Somme des points",
+    "interpretation": "Score ≤1: Probabilité faible; 1-2: Probabilité intermédiaire; ≥2: Probabilité élevée"
+  }
+]
